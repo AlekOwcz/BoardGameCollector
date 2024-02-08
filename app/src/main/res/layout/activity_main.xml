@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bruh"
+        android:adjustViewBounds="true"
+        />
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="#2B2B2B"/>
+
+    <Button
+        android:id="@+id/btnGames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:background="#00FF00"
+        android:drawableLeft="@drawable/game_box"
+        android:paddingLeft="32dp"
+        app:backgroundTint="#a15c35"
+        android:text="Games owned: 0"
+        android:textSize="24dp"/>
+
+    <Button
+        android:id="@+id/btnExtensions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FF00"
+        android:drawableLeft="@drawable/rozszerzenia2"
+        android:paddingLeft="32dp"
+        android:text="Extensions owned: 0"
+        android:textColor="@color/black"
+        app:backgroundTint="#A88B22"
+        android:textSize="24dp"/>
+
+    <Button
+        android:id="@+id/btnSynchronization"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FF00"
+        android:drawableLeft="@drawable/odswiezanie2"
+
+        android:paddingLeft="32dp"
+        android:text="Last Synchronization: Never"
+        android:textColor="@color/black"
+        app:backgroundTint="#129BC5"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear all data"
+        android:textColor="@color/black"
+        android:background="#00FF00"
+        android:drawableLeft="@drawable/miota2"
+        android:paddingLeft="32dp"
+        app:backgroundTint="#A81E1E"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:layout_constraintBottom_toTopOf="@id/tvWarning"
+        android:textSize="30dp"/>
+    <TextView
+        android:id="@+id/tvWarning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="!!!Warning, this action can not be reversed!!!!"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/btnClear" />
+
+</LinearLayout>
+
